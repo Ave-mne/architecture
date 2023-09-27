@@ -1,4 +1,4 @@
-package test.testConnectionTwo;
+package seminarOne.test.testConnectionTwo;
 
 // Абстрактный класс (Abstract Class)
 abstract class Animal {

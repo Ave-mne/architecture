@@ -1,4 +1,4 @@
-package test.additionalInformation;
+package seminarOne.test.additionalInformation;
 
 // Класс с различными видами атрибутов и методов
 public class Student {

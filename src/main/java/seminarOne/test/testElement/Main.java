@@ -1,4 +1,4 @@
-package test.testElement;
+package seminarOne.test.testElement;
 
 // Интерфейс (Interface)
 interface Drivable {

@@ -1,4 +1,4 @@
-package test.testConnection;
+package seminarOne.test.testConnection;
 
 // Абстрактный класс (Abstract Class)
 abstract class Animal {
@@ -68,7 +68,7 @@ class Room {
  * но не владеет им.
  * Композиция (Composition): House владеет Room.
  * Зависимость (Dependency): Главный класс Main зависит от Human
- * и Cat для своего выполнения.
+ * и Cat для своего выпо лнения.
  * */
 public class Main {
     public static void main(String[] args) {

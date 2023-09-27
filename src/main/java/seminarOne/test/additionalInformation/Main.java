@@ -1,4 +1,4 @@
-package test.additionalInformation;
+package seminarOne.test.additionalInformation;
 
 // Интерфейс с абстрактным методом
 interface Payable {

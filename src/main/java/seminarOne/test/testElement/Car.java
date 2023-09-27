@@ -1,4 +1,4 @@
-package test.testElement;
+package seminarOne.test.testElement;
 
 // Класс (Class) с реализацией интерфейса (Realization)
 public class Car extends Vehicle implements Drivable {

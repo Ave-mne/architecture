@@ -5,7 +5,7 @@ public abstract class Animal {
 }
 
 // Подкласс Dog (собака)
-class Dog extends Animal {
+class   Dog extends Animal {
     @Override
     public void makeSound() {
         System.out.println("Собака лает");

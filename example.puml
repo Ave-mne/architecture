@@ -1,0 +1,35 @@
+@startuml
+class seminarThree.ulmExample.MainProgram {
++ {static} void main(String[])
+}
+class seminarThree.ulmExample.CalculatorViewImpl {
++ void setObserver(ViewObserver)
++ void updateResult(double)
++ void clearScreen()
+}
+class seminarThree.ulmExample.CalculatorModel {
++ double add(double,double)
++ double subtract(double,double)
++ double multiply(double,double)
++ double divide(double,double)
+}
+interface seminarThree.ulmExample.CalculatorView {
+~ void setObserver(ViewObserver)
+~ void updateResult(double)
+~ void clearScreen()
+}
+interface seminarThree.ulmExample.ViewObserver {
+~ void onCalculate(String,double,double)
+~ void onClear()
+}
+class seminarThree.ulmExample.CalculatorPresenter {
+# CalculatorView calculatorView
+# CalculatorModel calculatorModel
++ void onCalculate(String,double,double)
++ void onClear()
+}
+
+
+seminarThree.ulmExample.CalculatorView <|.. seminarThree.ulmExample.CalculatorViewImpl
+seminarThree.ulmExample.ViewObserver <|.. seminarThree.ulmExample.CalculatorPresenter
+@enduml

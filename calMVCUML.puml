@@ -1,0 +1,43 @@
+@startuml
+class seminarFive.calculatorMVC.db.DatabaseManagementSlice {
+~ void saveData(String)
+~ String fetchData()
+}
+class seminarFive.calculatorMVC.model.substractOperation.SubstractOperation {
+~ double firstArg
+~ double secondArg
++ double subtract()
+}
+class seminarFive.calculatorMVC.View.InputOutputLayer {
+~ String getInput()
+~ void displayOutput(String)
+}
+class seminarFive.calculatorMVC.View.OutputSlice {
+~ void displayOutput(String)
+}
+interface seminarFive.calculatorMVC.View.IView {
+~ void runCalculator()
+}
+class seminarFive.calculatorMVC.View.ConsoleView {
+~ InputOutputLayer ioLayer
+~ CalculationLayer calcLayer
++ void runCalculator()
+}
+class seminarFive.calculatorMVC.model.CalculationLayer {
++ double add(double,double)
++ double subtract(double,double)
+}
+class seminarFive.calculatorMVC.model.sumOperation.SumOperation {
+~ double firstArg
+~ double secondArg
++ double sum()
+}
+class seminarFive.calculatorMVC.View.InputSlice {
+~ String getInput()
+}
+class seminarFive.calculatorMVC.Main {
+}
+
+
+seminarFive.calculatorMVC.View.IView <|.. seminarFive.calculatorMVC.View.ConsoleView
+@enduml

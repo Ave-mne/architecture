@@ -1,0 +1,52 @@
+@startuml
+class HomeWork2.GingerbreadFabric.GingerbreadFactory {
++ Gingerbread createGingerbread(String)
+}
+class HomeWork2.adressBook.BookBuilder {
+- String name
+- String surname
+- int age
+- String address
+- String telephone_number
+- String mail
++ BookBuilder set_name(String)
++ BookBuilder set_surname(String)
++ BookBuilder set_age(int)
++ BookBuilder set_address(String)
++ BookBuilder set_telephone_number(String)
++ BookBuilder set_mail(String)
++ Human build()
+}
+class HomeWork2.adressBook.Main {
++ {static} void main(String[])
+}
+class HomeWork2.adressBook.Human {
+- String name
+- String surname
+- int age
+- String address
+- String telephone_number
+- String mail
++ String toString()
+}
+abstract class HomeWork2.GingerbreadFabric.Gingerbread {
++ {abstract}void eat()
+}
+class HomeWork2.GingerbreadFabric.Chocolate {
++ void eat()
+}
+class HomeWork2.GingerbreadFabric.Mint {
++ void eat()
+}
+class HomeWork2.GingerbreadFabric.Cherry {
++ void eat()
+}
+class HomeWork2.GingerbreadFabric.Main {
++ {static} void main(String[])
+}
+
+
+HomeWork2.GingerbreadFabric.Gingerbread <|-- HomeWork2.GingerbreadFabric.Chocolate
+HomeWork2.GingerbreadFabric.Gingerbread <|-- HomeWork2.GingerbreadFabric.Mint
+HomeWork2.GingerbreadFabric.Gingerbread <|-- HomeWork2.GingerbreadFabric.Cherry
+@enduml

@@ -14,7 +14,6 @@ public class ConsoleView implements IView {
 
     @Override
     public void runCalculator() {
-
         calcLayer.subtract(Double.parseDouble(ioLayer.getInput()), Double.parseDouble(ioLayer.getInput()));
     }
 }

@@ -11,5 +11,6 @@ public class SubstractOperation {
 
     public double subtract() {
         return firstArg - secondArg;
+
     }
 }

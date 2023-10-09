@@ -9,5 +9,6 @@ public class DatabaseManagementSlice {
     String fetchData() {
         // Реализация извлечения данных из базы данных
         return "Данные из базы данных";
+
     }
 }

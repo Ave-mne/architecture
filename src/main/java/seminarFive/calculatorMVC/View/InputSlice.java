@@ -5,4 +5,5 @@ public class InputSlice {
         // Чтение ввода пользователя
         return "";
     }
+
 }

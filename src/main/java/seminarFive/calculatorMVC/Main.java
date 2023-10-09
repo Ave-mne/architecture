@@ -8,4 +8,5 @@ public class Main {
         IView view = new ConsoleView();
         view.runCalculator();
     }
+
 }

@@ -9,4 +9,5 @@ public class InputOutputLayer {
     void displayOutput(String result) {
         // Вывод результата на экран
     }
+
 }

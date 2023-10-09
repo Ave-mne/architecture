@@ -12,4 +12,5 @@ public class SumOperation {
     public double sum() {
         return firstArg + secondArg;
     }
+
 }

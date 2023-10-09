@@ -13,5 +13,7 @@ public class CalculationLayer {
     public double subtract(double a, double b) {
         SubstractOperation substractOperation = new SubstractOperation(a, b);
         return substractOperation.subtract();
+
     }
+
 }
